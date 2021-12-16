@@ -35,12 +35,14 @@ p{
 }
 #section2{
   width: 93%;
-  background-color: rgba(1, 1, 19, 0.30);
+  background-color: rgba(1, 1, 19, 0.85);
   height: 95%;
+  opacity: 30%;
 }
 #section2:hover{
   background-color: rgba(1, 1, 19, 0.85);
   transition: .4s;
+  opacity: 100%;
 }
 #conteiner{
   width: 65%;
