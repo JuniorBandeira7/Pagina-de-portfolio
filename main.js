@@ -1,1 +1,1 @@
-console.log('Hello World!');
+window.location = "#wall-1"

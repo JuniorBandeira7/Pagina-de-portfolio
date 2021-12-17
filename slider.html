@@ -6,31 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<script>
+  window.location = "#wall-1"
+</script>
 <body>
     <div class="container">
         <div class="wall wall-1" id="wall-1">
-          <a href="#wall-3">Voltar</a>
-          <h1>Carrocel numero - 1</h1>
-          <a href="#wall-2">Avançar</a>
+          <a href="#wall-3" ><div class="voltar"></div></a>
+          <h1 class="Titulo-da-foto">Carrocel numero - 1</h1>
+          <a href="#wall-2"><div class="avancar"></div></a>
         </div>
         
         <div class="wall wall-2" id="wall-2">
-          <a href="#wall-1">Voltar</a>
-          <h1>Carrocel numero - 2</h1>
-          <a href="#wall-3">Avançar</a>
+          <a href="#wall-1" ><div class="voltar"></div></a>
+          <h1 class="Titulo-da-foto">Carrocel numero - 2</h1>
+          <a href="#wall-3"><div class="avancar"></div></a>
         </div>
         
         <div class="wall wall-3" id="wall-3">
-          <a href="#wall-2">Voltar</a>
-          <h1>Carrocel numero - 3</h1>
-          <a href="#wall-1">Avançar</a>
+          <a href="#wall-2" ><div class="voltar"></div></a>
+          <h1 class="Titulo-da-foto">Carrocel numero - 3</h1>
+          <a href="#wall-1"><div class="avancar"></div></a>
         </div>
       </div>
 </body>
 <style>
+    body{
+      width: 100%;
+      padding: 0;
+      margin: 0;
+      height: 100vh;
+    }
     .container{
-        width: 150px;
-        height: 150px;
+        width: 50%;
+        height: 50%;
     }
 
     .wall{
@@ -40,12 +49,42 @@
     }
 
     /* trocar pelas imagens */
-    .wall-1{ background-color: #f00; }
-    .wall-2{ background-color: #0f0; }
-    .wall-3{ background-color: #00f; }
+    .wall-1{ background-image: url(teste\ \(1\).jpg);}
+    .wall-2{ background-image: url(teste\ \(2\).jpg);}
+    .wall-3{ background-image: url(teste\ \(3\).jpg);}
 
     .wall:target{/* target é: quando clicar*/
-        display: block;
+        display: flex;
+        justify-content: space-between;
+    }
+    .voltar{
+      width: 100%;
+      height: 100%;
+      background-color: rgba(1, 1, 19, 0.5);
+      transition: .6s;
+    }
+    .voltar:hover{
+      background-color: rgba(1, 1, 19, 0.85);
+      transition: .6s;
+    }
+    .avancar{
+      width: 100%;
+      height: 100%;
+      background-color: rgba(1, 1, 19, 0.5);
+      margin-left: 0%;
+      transition: .6s
+      
+    }
+    .avancar:hover{
+      background-color: rgba(1, 1, 19, 0.85);
+      transition: .6s;
+    }
+    a{
+      width: 15%;
+      height: 100%;
+    }
+    .Titulo-da-foto{
+      margin-top: 45%;
     }
 </style>
 
