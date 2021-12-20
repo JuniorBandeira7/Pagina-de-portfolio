@@ -71,9 +71,9 @@ footer{
 }
 
 /* trocar pelas imagens */
-.wall-1{ background-image: url(teste\ \(1\).jpg);}
-.wall-2{ background-image: url(teste\ \(2\).jpg);}
-.wall-3{ background-image: url(teste\ \(3\).jpg);}
+.wall-1{ background-image: url(Tela\ de\ loguin.png);}
+.wall-2{ background-image: url(Contador\ de\ dias.png);}
+.wall-3{ background-image: url(Primeiro\ front\ end.png);}
 
 .wall:target{/* target é: quando clicar*/
   display: flex;
@@ -107,4 +107,5 @@ height: 100%;
 }
 .Titulo-da-foto{
 margin-top: 70%;
+color:rgb(255, 14, 34)
 }
