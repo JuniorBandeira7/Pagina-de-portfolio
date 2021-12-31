@@ -12,6 +12,7 @@
 
   <!-- Custom Styles -->
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="cssdoslider.css">
 </head>
 
 <body>
@@ -34,29 +35,25 @@
     <div id="conteiner">
       <section id="section2">
         <div class="container">
-          <div class="wall wall-1" id="wall-1">
-            <a href="#wall-3" ><div class="voltar"></div></a>
-            <h1 class="Titulo-da-foto">Tela de loguin</h1>
-            <a href="#wall-2"><div class="avancar"></div></a>
-          </div>
-          
-          <div class="wall wall-2" id="wall-2">
-            <a href="#wall-1" ><div class="voltar"></div></a>
-            <h1 class="Titulo-da-foto">Contador de dias</h1>
-            <a href="#wall-3"><div class="avancar"></div></a>
-          </div>
-          
-          <div class="wall wall-3" id="wall-3">
-            <a href="#wall-2" ><div class="voltar"></div></a>
-            <h1 class="Titulo-da-foto">Meu primeiro front-end</h1>
-            <a href="#wall-1"><div class="avancar"></div></a>
-          </div>
+          <section id = "section-da-foto">
+            <div id="div-da-foto">
+                    <div class="voltar">
+                        <input type="button" onclick="MudarFotoTras()" class="botao-av" id = "btt">
+                    </div>
+                    <a id ="a-da-foto" href="https://github.com/JuniorBandeira7/Contador-de-dias"><img src="FotosFullHD/Contador de dias.png" alt="" id="a"></a>
+                    <div class="avancar">
+                        <input type="button" onclick="MudarFotoFrente()" class="botao-av" id = "btf">
+                    </div>
+            </div>
+            <div class="botoes-das-imagens"> 
+              <input type="button" id = "bt" onclick="Bt()" class ="bt">
+              <input type="button" id = "bt1" onclick="Bt1()" class ="bt">
+              <input type="button" id = "bt2" onclick="Bt2()" class ="bt">
+            </section>
+        </div>
+        <script src="jsdoslider.js"></script>
         </div>
       </section>
     </div>
-
-  
-  <!-- Project -->
-  <script src="main.js"></script>
 </body>
 </html>

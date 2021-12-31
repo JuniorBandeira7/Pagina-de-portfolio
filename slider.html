@@ -1,91 +1,29 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="cssdoslider.css">
 </head>
-<script>
-  window.location = "#wall-1"
-</script>
 <body>
-    <div class="container">
-        <div class="wall wall-1" id="wall-1">
-          <a href="#wall-3" ><div class="voltar"></div></a>
-          <h1 class="Titulo-da-foto">Carrocel numero - 1</h1>
-          <a href="#wall-2"><div class="avancar"></div></a>
+    <section id = "section-da-foto">
+        <div id="div-da-foto">
+                <div class="voltar">
+                    <input type="button" onclick="MudarFotoTras()" class="botao-av" id = "btt">
+                </div>
+                <img src="Contador de dias.png" alt="" id="a">
+                <div class="avancar">
+                    <input type="button" onclick="MudarFotoFrente()" class="botao-av" id = "btf">
+                </div>
         </div>
-        
-        <div class="wall wall-2" id="wall-2">
-          <a href="#wall-1" ><div class="voltar"></div></a>
-          <h1 class="Titulo-da-foto">Carrocel numero - 2</h1>
-          <a href="#wall-3"><div class="avancar"></div></a>
-        </div>
-        
-        <div class="wall wall-3" id="wall-3">
-          <a href="#wall-2" ><div class="voltar"></div></a>
-          <h1 class="Titulo-da-foto">Carrocel numero - 3</h1>
-          <a href="#wall-1"><div class="avancar"></div></a>
-        </div>
-      </div>
+        <div class="botoes-das-imagens"> 
+            <input type="button" id = "bt" onclick="Bt()" class ="bt">
+            <input type="button" id = "bt1" onclick="Bt1()" class ="bt">
+            <input type="button" id = "bt2" onclick="Bt2()" class ="bt">
+        </section>
+    </div>
+    <script src="jsdoslider.js"></script>
 </body>
-<style>
-    body{
-      width: 100%;
-      padding: 0;
-      margin: 0;
-      height: 100vh;
-    }
-    .container{
-        width: 50%;
-        height: 50%;
-    }
-
-    .wall{
-        display: none;
-        width: 100%;
-        height: 100%;
-    }
-
-    /* trocar pelas imagens */
-    .wall-1{ background-image: url(teste\ \(1\).jpg);}
-    .wall-2{ background-image: url(teste\ \(2\).jpg);}
-    .wall-3{ background-image: url(teste\ \(3\).jpg);}
-
-    .wall:target{/* target é: quando clicar*/
-        display: flex;
-        justify-content: space-between;
-    }
-    .voltar{
-      width: 100%;
-      height: 100%;
-      background-color: rgba(1, 1, 19, 0.5);
-      transition: .6s;
-    }
-    .voltar:hover{
-      background-color: rgba(1, 1, 19, 0.85);
-      transition: .6s;
-    }
-    .avancar{
-      width: 100%;
-      height: 100%;
-      background-color: rgba(1, 1, 19, 0.5);
-      margin-left: 0%;
-      transition: .6s
-      
-    }
-    .avancar:hover{
-      background-color: rgba(1, 1, 19, 0.85);
-      transition: .6s;
-    }
-    a{
-      width: 15%;
-      height: 100%;
-    }
-    .Titulo-da-foto{
-      margin-top: 45%;
-    }
-</style>
-
 </html>
