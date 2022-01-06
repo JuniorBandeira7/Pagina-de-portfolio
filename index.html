@@ -2,60 +2,36 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <title>HTML</title>
-  
-  <!-- HTML -->
-  
-
-  <!-- Custom Styles -->
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="cssdoslider.css">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portifólio</title>
+  <link rel="stylesheet" href="Estilo/css-padrão.css">
+  <link rel="stylesheet" href="Estilo/css-index.css">
+  <link rel="shortcut icon" href="Favicon/favicon.ico" type="image/x-icon">
 </head>
-
 <body>
-  
-    <section id="section1">
-      <div>
-        <div id="foto-perfil"></div>
-        <h1>Olá, me chamo Julio Bandeira.</h1>
-        <h2>Bem vindo ao meu portifolio.</h2>
-        <p>Sou estudante de ciência da computação, mas foco os meus estudos na
-          parte de progamação. Sempre fui ligado à tecnologia, principalmente
-          video games e internet. Busco fazer parte de uma grande empresa de
-          tecnologia para participar de projetos inovadores e desafiadores,
-          afim de me desenvolver como progamador.</p>
-      </div>
-        <footer>
-          <a href="https://github.com/JuniorBandeira7"><img src="https://img.icons8.com/stickers/50/000000/github.png"/></a>
-          <a href="https://www.linkedin.com/in/julio-bandeira-442515174/"><img src="https://img.icons8.com/dusk/50/000000/linkedin.png"/></a>
-          <a href="https://www.facebook.com/JuniorBandeira1998"><img src="https://img.icons8.com/dusk/50/000000/facebook--v1.png"/></a>
-        </footer>
-    </section>
-    <div id="conteiner">
-      <section id="section2">
-        <div class="container">
-          <section id = "section-da-foto">
-            <div id="div-da-foto">
-                    <div class="voltar">
-                        <input type="button" onclick="MudarFotoTras()" class="botao-av" id = "btt">
-                    </div>
-                    <a id ="a-da-foto" href="https://github.com/JuniorBandeira7/Contador-de-dias" style="width: 100%; height:100%;"><img src="FotosFullHD/Contador de dias.png" alt="" id="a"></a>
-                    <div class="avancar">
-                        <input type="button" onclick="MudarFotoFrente()" class="botao-av" id = "btf">
-                    </div>
-            </div>
-            <div class="botoes-das-imagens"> 
-              <input type="button" id = "bt" onclick="Bt()" class ="bt">
-              <input type="button" id = "bt1" onclick="Bt1()" class ="bt">
-              <input type="button" id = "bt2" onclick="Bt2()" class ="bt">
-            </section>
-        </div>
-        <script src="jsdoslider.js"></script>
-        </div>
-      </section>
+  <img id="foto-de-perfil" src="foto de perfil.png" alt="">
+  <Header id="header-principal">
+    <div>
+      <p><a href="">Inicio</a> &nbsp&nbsp&nbsp<a href="">Projetos</a> &nbsp&nbsp&nbsp<a href="">Contato</a> &nbsp&nbsp&nbsp
+      <a href="https://github.com/JuniorBandeira7" style="margin-left: 30vw;"><img src="Estilo/github.png" alt="Link para o github"> 
+      </a><a href="https://www.linkedin.com/in/julio-bandeira-442515174/"><img src="Estilo/linkedin.png" alt="Link para o linkedin"></a> 
+      <a href="https://www.facebook.com/JuniorBandeira1998"><img src="Estilo/facebook.png" alt="Link para o facebook"></a></p>
     </div>
+  </Header>
+  <main>
+    <section>
+      <h1>Olá, bem vindo ao meu portfólio!</h1>
+      <div>
+        <p>Me chamo Julio Bandeira, sou estudante de Ciencias da Computação e aficionado por tecnologia. Estou iniciando nos estudos sobre progamação, à princípio no front-end,
+          com HTML5, CSS3 e JAVASCRIPT. Prentendo a curto/médio prazo me tornar um progamador web Full-stack focado no JAVASCRIPT com NODE e REACT, porém tenho interesse em no futuro me 
+          aventurar por assustos mais avançados na progamação, como: Inteligência artificial, realidade virtual e Games.
+
+        </p>
+      </div>
+    </section>
+  </main>
+  
+  
 </body>
 </html>
