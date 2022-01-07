@@ -1,0 +1,27 @@
+section{
+    margin-top: 200px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+}
+#div1{
+    width: 372.2px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    margin-right: 10px;
+    box-shadow: black 10px 10px 10px;
+}
+#div1 img{
+    width: 100%;
+}
+#div1 div{
+    height: 50px;
+    width: 100%;
+    background: rgba(1, 1, 41, 0.863);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;   
+}
