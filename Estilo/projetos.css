@@ -17,11 +17,20 @@ section{
     width: 100%;
 }
 #div1 div{
-    height: 50px;
+    min-height: 50px;
     width: 100%;
     background: rgba(1, 1, 41, 0.863);
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;   
+    flex-direction: column; 
+    overflow: hidden;  
+}
+@media(max-width:785px){
+    section{
+        margin-top: 100px;
+    }
+    #div1{
+        margin-top: 20px;
+    }
 }
