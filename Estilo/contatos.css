@@ -57,7 +57,9 @@ section{
     width: 27vw;
     height: 100px;
     background: none;
-    border: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
     border-bottom-width: 1px;
     border-bottom-color: wheat; 
 }
@@ -69,4 +71,15 @@ section{
     background-color: wheat;
     border: none;
     width: 13.5vw;
+}
+@media(max-width:600px){
+    #contato h1, #contato-form h1{
+        font-size: 20px;
+    }
+    #contato p{
+        font-size: 10px;
+    }
+    section{
+        width: 100%;
+    }
 }
