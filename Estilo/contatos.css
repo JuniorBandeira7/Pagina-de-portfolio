@@ -80,6 +80,7 @@ form{
 }
 textarea, input{
     color: wheat;
+    margin-top: 10px;
 }
 @media(max-width:600px){
     #contato h1, #contato-form h1{
