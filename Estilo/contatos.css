@@ -72,6 +72,14 @@ section{
     border: none;
     width: 13.5vw;
 }
+form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+textarea{
+    color: wheat;
+}
 @media(max-width:600px){
     #contato h1, #contato-form h1{
         font-size: 20px;
