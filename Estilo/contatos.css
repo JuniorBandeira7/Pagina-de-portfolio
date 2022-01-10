@@ -71,13 +71,14 @@ section{
     background-color: wheat;
     border: none;
     width: 13.5vw;
+    color: black
 }
 form{
     display: flex;
     justify-content: center;
     flex-direction: column;
 }
-textarea{
+textarea, input{
     color: wheat;
 }
 @media(max-width:600px){
