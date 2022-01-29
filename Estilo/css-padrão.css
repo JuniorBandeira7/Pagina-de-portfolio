@@ -15,9 +15,11 @@ p, h1, h2, h3, a{
 #github{
   margin-left: 30vw;
 }
+header a{
+  font-size: 25px;
+}
 a{
   text-decoration: none;
-  font-size: 25px;
 }
 #header-principal{
   background: url(Textura/blue_Grunge_halftone_detailed_texture_background.png);
